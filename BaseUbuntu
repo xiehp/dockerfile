@@ -1,0 +1,29 @@
+# The FROM instruction sets the Base Image for subsequent instructions.
+# Using Nginx as Base Image
+FROM ubuntu:18.04
+
+#RUN sudo mkdir -p /etc/docker
+#RUN sudo tee /etc/docker/daemon.json <<-'EOF'
+#{
+#  "registry-mirrors": ["https://ombbkt8t.mirror.aliyuncs.com"]
+#}
+#EOF
+#
+#RUN sudo systemctl daemon-reload
+#RUN sudo systemctl restart docker
+
+
+
+RUN apt-get update
+
+#ADD file:ac1c1e51281ff4affbb38dd497cfd5918bc164f9b5239b2273c523c869d19a6f in /
+
+
+RUN apt-get install -y apt-utils
+RUN apt-get install -y wget
+
+
+RUN apt-get install lsb-core -y
+RUN apt-get install curl -y
+
+
