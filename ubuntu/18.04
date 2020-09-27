@@ -1,0 +1,11 @@
+# The FROM instruction sets the Base Image for subsequent instructions.
+# Using Nginx as Base Image
+FROM ubuntu:18.04
+
+RUN apt-get update
+
+RUN apt-get install -y apt-utils
+RUN apt-get install -y wget
+
+RUN apt-get install lsb-core -y
+RUN apt-get install curl -y
