@@ -15,3 +15,6 @@ RUN apt-get install net-tools -y --no-install-recommends
 
 # 安装和ping有关的工具
 RUN apt-get install iputils-ping -y --no-install-recommends
+
+RUN apt-get install netcat -y --no-install-recommends
+RUN apt-get install telnet -y --no-install-recommends
