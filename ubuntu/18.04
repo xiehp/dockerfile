@@ -4,6 +4,10 @@ FROM ubuntu:18.04
 
 RUN apt-get update
 
+
+# 有些会报错
+RUN apt-get install dialog -y --no-install-recommends
+
 RUN apt-get install apt-utils -y --no-install-recommends
 RUN apt-get install wget -y --no-install-recommends
 
